@@ -1,0 +1,20 @@
+{
+    "emails": [{
+        "id": 1,
+        "user": "json-server",
+        "email": "typicode",
+        "subject": "typicode",
+        "message": "typicode",
+        "status": 0,
+        "whish": 0,
+        "date": ""
+    }],
+    "admins": [{
+        "id": 1,
+        "name": "some comment",
+        "username": "",
+        "password": "",
+        "email": "typicode",
+        "date": ""
+    }]
+}
