@@ -1,0 +1,38 @@
+<!-- banniere -->
+<app-banner [titleBanner]="bannerTitle" [bgBanner]="bannerBg" [textBanner]="bannerText">
+</app-banner>
+<!-- Fin banniere -->
+
+
+<section class="section bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Decrivez-nous vos besoins</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <form [formGroup]="contactFormData" (ngSubmit)="submitContact()">
+                    <input formControlName="name" type="text" class="form-control rounded-pill" name="name" placeholder="Votre nom" required>
+                    <span class="text-warning m-3 " *ngIf="contactFormData.controls['name'].dirty && contactFormData.hasError('required','name')">* Ce champ est requis</span>
+                    <input formControlName="email" type="email" class="form-control mt-3 rounded-pill" name="email" placeholder="Votre Email" required>
+                    <span class="text-warning m-3 " *ngIf="contactFormData.controls['email'].dirty && contactFormData.hasError('required','email')">* Ce champ est requis</span>
+                    <input formControlName="subject" type="text" class="form-control mt-3 rounded-pill" name="subject" placeholder="Sujet" required>
+                    <span class="text-warning m-3 " *ngIf="contactFormData.controls['subject'].dirty && contactFormData.hasError('required','subject')">* Ce champ est requis</span>
+                    <textarea formControlName="message" name="message" class="form-control mt-3 rounded" placeholder="Votre Message" required></textarea>
+                    <span class="text-warning m-3 " *ngIf="contactFormData.controls['message'].dirty && contactFormData.hasError('required','message')">* Ce champ est requis</span> <br>
+                    <button type="submit" value="send" class="btn btn-primary rounded-pill mt-3">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt. Dolore, labore. Accusamus nulla sed cum aliquid
+                    exercitationem debitis error harum porro maxime quo iusto aliquam dicta modi earum fugiat, vel possimus commodi, deleniti et veniam, fuga ipsum praesentium. Odit unde optio nulla ipsum quae obcaecati! Quod esse natus quibusdam asperiores
+                    quam vel, tempore itaque architecto ducimus expedita</p>
+                <a href="tel:+2250707288181" class="text-color h5 d-block">+225 07 07 28 81 81 / +225	07 07 90 44	00</a>
+                <a href="mailto:info@lifiled.africa" class="mb-5 text-color h5 d-block">info@lifiled.africa</a>
+                <p>Abidjan, Côte d’Ivoire<br>28 BP 942 Abidjan 28 Cocody Riviera Palmeraie</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-us',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+  public bannerTitle: string = "Apropos ";
+  public bannerBg: string = "assets/images/show/Afrique_connecté.PNG";
+  public bannerText: string = "Decouvrez lifiled ces actions et son histoire";
+
+  constructor(
+    private setTitle: Title,
+  ) { }
 
   ngOnInit(): void {
+    this.setTitle.setTitle("A Propos de LIFILED");
   }
 
 }

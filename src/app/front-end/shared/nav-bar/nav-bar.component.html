@@ -1,1 +1,66 @@
-<p>nav-bar works!</p>
+<!-- preloader -->
+<div class="preloader">
+    <img src="assets/images/preloader.gif" alt="chargement">
+</div>
+<!-- Fin preloader -->
+
+<header class="fixed-top header">
+    <div class="top-header bg-white">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <a class="text-color mr-3" href="tel:+2250707288181"><strong>TEL:</strong> +225 07 07 28 81 81 / +225	07 07 90 44	00</a>
+                    <ul class="list-inline d-inline">
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://facebook.com/"><i class="ti-facebook"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://twitter.com/"><i class="ti-twitter-alt"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://instagram.com/"><i class="ti-instagram"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://linkedin.com/"><i class="ti-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center text-lg-right">
+                    <p class="text-primary" style="font-size: 20px;">éclairer et connecter l'Afrique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a class="navbar-brand" href="/accueil"><img src="assets/images/logo.png" style="max-width: 150px;" alt="logo LIFILED"></a>
+                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item {{activeHomePage}}">
+                            <a class="nav-link" href="/accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown view {{activeActivityPage}}">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nos Activités
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/activities/solaires">Eclairage Solaire</a></li>
+                                <li><a class="dropdown-item" href="/activities/public">Eclairage public</a></li>
+                                <li><a class="dropdown-item" href="/activities/connectivité">Connectivité</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item {{activeServicePage}}">
+                            <a class="nav-link" href="/services">Nos Services</a>
+                        </li>
+                        <li class="nav-item {{activeRealisationPage}}">
+                            <a class="nav-link" href="/realisations">Nos Réalisations</a>
+                        </li>
+                        <li class="nav-item {{activeAboutPage}}">
+                            <a class="nav-link" href="/a-propos">A Propos</a>
+                        </li>
+                        <li class="nav-item {{activeContactPage}}">
+                            <a class="nav-link" href="/contact">Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
