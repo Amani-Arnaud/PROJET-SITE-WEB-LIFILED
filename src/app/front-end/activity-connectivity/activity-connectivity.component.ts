@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class ActivityConnectivityComponent implements OnInit {
 
   public bannerTitle: string = "Connectivité";
-  public bannerBg: string = "";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Decouvrez Nos activités de la connectivité à l'Afrique";
 
   constructor(

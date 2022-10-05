@@ -1,1 +1,21 @@
-<p>not-found-page works!</p>
+<!-- banniere -->
+<app-banner [titleBanner]="bannerTitle" [bgBanner]="bannerBg" [textBanner]="bannerText">
+</app-banner>
+<!-- Fin banniere -->
+
+<div class="container m-5 mx-auto">
+    <div class="row  justify-content-md-center">
+        <div class=" col-md-6">
+            <img src="assets/images/space-404.gif" alt="img 404" class="img-fluid rounded">
+        </div>
+        <div class=" col-md-6 mt-5 justify-content-center">
+            <p class="fs-3 text-center"> <span class="text-danger">Oupps!</span> Page non trouvé</p>
+            <p class="lead text-center">
+                Cette page n'existe pas !
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="/accueil" class="btn btn-primary rounded-pill">Retour à l'Acueil</a> &nbsp;
+            </div>
+        </div>
+    </div>
+</div>

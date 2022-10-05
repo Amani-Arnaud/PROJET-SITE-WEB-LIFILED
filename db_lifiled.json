@@ -1,20 +1,33 @@
 {
-    "emails": [{
-        "id": 1,
-        "user": "json-server",
-        "email": "typicode",
-        "subject": "typicode",
-        "message": "typicode",
-        "status": 0,
-        "whish": 0,
-        "date": ""
-    }],
-    "admins": [{
-        "id": 1,
-        "name": "some comment",
-        "username": "",
-        "password": "",
-        "email": "typicode",
-        "date": ""
-    }]
+  "emails": [
+    {
+      "id": 1,
+      "user": "json-server",
+      "email": "typicode",
+      "subject": "typicode",
+      "message": "typicode",
+      "status": 0,
+      "whish": 0,
+      "date": ""
+    },
+    {
+      "user": "dupont",
+      "email": "Bahm42122@gmail.com",
+      "subject": "sujet",
+      "message": "ok",
+      "status": 0,
+      "whish": 0,
+      "id": 2
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "some comment",
+      "username": "",
+      "password": "",
+      "email": "typicode",
+      "date": ""
+    }
+  ]
 }

@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class ActivitySolarComponent implements OnInit {
 
   public bannerTitle: string = "Eclairage Solaire";
-  public bannerBg: string = "";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Decouvrez Nos activités d'éclairage Solaire";
 
   constructor(

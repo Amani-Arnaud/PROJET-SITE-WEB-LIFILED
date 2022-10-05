@@ -1,5 +1,15 @@
-<app-nav-bar></app-nav-bar>
+<ng-container *ngIf="urlPage=='/lifiled-admin';else frontEnd">
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+</ng-container>
+
+<ng-template #frontEnd>
+
+    <app-nav-bar></app-nav-bar>
+
+    <router-outlet></router-outlet>
+
+    <app-footer></app-footer>
+
+</ng-template>

@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class RealisationsComponent implements OnInit {
 
   public bannerTitle: string = "Réalisations";
-  public bannerBg: string = "assets/images/bg/";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Test de Réalisation";
 
   constructor(

@@ -8,6 +8,10 @@ import { Title } from '@angular/platform-browser';
 })
 export class NotFoundPageComponent implements OnInit {
 
+  public bannerTitle: string = "Aucun Page ";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
+  public bannerText: string = "Veuillez retouner à la page d'accueil";
+
   constructor(
     private pageTitle: Title
   ) { }

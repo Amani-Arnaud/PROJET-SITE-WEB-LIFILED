@@ -9,8 +9,8 @@ import { Title } from '@angular/platform-browser';
 export class ServicesComponent implements OnInit {
 
   public bannerTitle: string = "Service";
-  public bannerBg: string = "";
-  public bannerText: string = "Test de service";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
+  public bannerText: string = "Nos services";
 
   constructor(
     private setTitle: Title,

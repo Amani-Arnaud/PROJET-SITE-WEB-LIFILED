@@ -15,6 +15,7 @@ import { ActivityConnectivityComponent } from './activity-connectivity/activity-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { BannerComponent } from './shared/banner/banner.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BannerComponent } from './shared/banner/banner.component';
     FrontEndRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DatePipe
   ]
 })
 export class FrontEndModule { }

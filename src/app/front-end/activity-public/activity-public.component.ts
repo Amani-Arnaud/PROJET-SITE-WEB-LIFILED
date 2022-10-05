@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class ActivityPublicComponent implements OnInit {
 
   public bannerTitle: string = "Eclairages Public";
-  public bannerBg: string = "";
+  public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Decouvrez Nos activités d'éclairage public";
 
   constructor(
