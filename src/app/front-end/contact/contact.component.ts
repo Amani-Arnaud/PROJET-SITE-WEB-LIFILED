@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FrontServiceService } from 'src/app/services/front-service.service';
+import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -20,7 +21,7 @@ export class ContactComponent implements OnInit {
     private setTitle: Title,
     private formbuilder: FormBuilder,
     private serviceFront: FrontServiceService,
-    // private datePie: DatePipe
+    private datePipe: DatePipe
   ) { }
 
   ngOnInit(): void {
@@ -41,12 +42,12 @@ export class ContactComponent implements OnInit {
       "message": this.contactFormData.value.message,
       "status": 0,
       "whish": 0,
-      // "date": this.datePie.transform(new Date(), 'yyyy-MM-dd')
+      "date": this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm')
     };
     if (this.serviceFront.sendMessage(data)) {
       // formulaire envoyé
       console.log("envoyé");
-      this.contactFormData.reset;
+      this.contactFormData.reset();
     } else {
       // formulaire non envoyé
       console.log("echec envoi");

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundPageComponent } from '../shared/not-found-page/not-found-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ActivityConnectivityComponent } from './activity-connectivity/activity-connectivity.component';
@@ -20,7 +21,10 @@ const routes: Routes = [
   { path: 'services', component:ServicesComponent},
   { path: 'realisations', component:RealisationsComponent},
   { path: 'a-propos', component:AboutUsComponent},
-  { path: 'contact', component:ContactComponent}
+  { path: 'contact', component:ContactComponent},
+
+  { path: '**', component:NotFoundPageComponent}
+
 ];
 
 @NgModule({

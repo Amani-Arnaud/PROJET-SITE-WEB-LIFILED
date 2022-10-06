@@ -1,0 +1,37 @@
+<div class="container bg-secondary rounded">
+    <div class="align-items-center">
+        <div class="intro-form rounded w-75 mx-auto mt-5 pb-5">
+            <div class="entete-form mx-auto py-5">
+                <p class="title fs-2 text-center bg-primary rounded text-white">Connexion Admin <i class="ti-power-off m-3"></i> </p>
+            </div>
+            <div class="form w-75 mx-auto mb-5">
+                <form [formGroup]="loginFormData" (ngSubmit)="login()">
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label text-white my-2"> Nom d'utilisateur</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent text-white border-end-0 p-2">
+                                <i class="ti-email fs-3"></i>
+                            </span>
+                            <input formControlName="email" type="email" class="form-control bg-transparent text-white border-start-0" id="email" placeholder="email de l'Administrateur">
+                        </div>
+                        <span class="text-warning " *ngIf="loginFormData.controls['email'].dirty && loginFormData.hasError( 'required', 'email') ">* Ce champ est requis</span>
+                    </div>
+
+                    <div class="form-group mb-3 ">
+                        <label for="password" class="form-label text-white my-2 ">Mot de Passe</label>
+                        <div class="input-group ">
+                            <span class="input-group-text bg-transparent text-white border-end-0 p-2 " id="basic-addon3 ">
+                                <i class="ti-lock fs-3"></i>
+                            </span>
+                            <input formControlName="password" type="password " class="form-control bg-transparent text-white border-start-0 " id="password" placeholder="Mot de passe ">
+                        </div>
+                        <span class="text-warning " *ngIf="loginFormData.controls['password'].dirty && loginFormData.hasError( 'required', 'password') ">* Ce champ est requis</span>
+                    </div>
+                    <div class="d-flex justify-content-center mb-5 ">
+                        <button class="btn btn-success text-center w-50 p-3 rounded-pill">VALIDER</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

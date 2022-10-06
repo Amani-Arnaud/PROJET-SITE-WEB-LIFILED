@@ -15,7 +15,7 @@ import { ActivityConnectivityComponent } from './activity-connectivity/activity-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { BannerComponent } from './shared/banner/banner.component';
-import { DatePipe } from '@angular/common';
+import { NotFoundPageComponent } from '../shared/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { DatePipe } from '@angular/common';
     ActivitySolarComponent,
     ActivityPublicComponent,
     ActivityConnectivityComponent,
-    BannerComponent
+    BannerComponent,
+    NotFoundPageComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +38,6 @@ import { DatePipe } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    DatePipe
   ]
 })
 export class FrontEndModule { }
