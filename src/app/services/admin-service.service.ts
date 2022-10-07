@@ -37,7 +37,7 @@ export class AdminServiceService {
   }
 
   getMessages(){
-    return this.http.get<any>(API_LINKS.MESSAGE_URL).pipe(map((res)=>{
+    return this.http.get<any>(API_LINKS.MESSAGE_URL + "?_sort=id&_order=desc").pipe(map((res)=>{
       return res;
     }));
   }
@@ -60,7 +60,7 @@ export class AdminServiceService {
   }
 
   searchMessage(attribut: string, value: string){
-    return this.http.get<any>(API_LINKS.MESSAGE_URL + '?' + attribut + '=' + value).pipe(map((res)=>{
+    return this.http.get<any>(API_LINKS.MESSAGE_URL + '?' + attribut + '=' + value + "&_sort=id&_order=desc").pipe(map((res)=>{
       return res;
     }));
   }

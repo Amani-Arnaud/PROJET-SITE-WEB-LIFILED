@@ -12,6 +12,8 @@ export class BackOfficeComponent implements OnInit {
 
   public messages:any;
   public indexPage:number = 1;
+  public titleMessages!: string;
+  public numberUnreadedMessage!: number;
 
   public allMessagesPages: string = "";
   public unReadedMessagesPages: string = "active rounded-pill bg-primary ";
@@ -41,6 +43,8 @@ export class BackOfficeComponent implements OnInit {
       this.indexPage;
       this.messages = result;
     });
+    this.titleMessages = "Tous les Messsages";
+    this.getUnreadedMessagesNumbers();
   }
 
   getUnreadedMessages(){
@@ -51,6 +55,14 @@ export class BackOfficeComponent implements OnInit {
     this.adminService.searchMessage("status", "0").subscribe((result)=>{
       this.indexPage;
       this.messages = result;
+    });
+    this.titleMessages = "Nouveaux Messsages";
+    this.getUnreadedMessagesNumbers();
+  }
+
+  getUnreadedMessagesNumbers(){
+    this.adminService.searchMessage("status", "0").subscribe((result)=>{
+      this.numberUnreadedMessage = result.length;
     });
   }
 
@@ -63,6 +75,8 @@ export class BackOfficeComponent implements OnInit {
       this.indexPage;
       this.messages = result;
     });
+    this.titleMessages = "Messsages lus";
+    this.getUnreadedMessagesNumbers();
   }
 
   getWhishMessages(){
@@ -74,11 +88,56 @@ export class BackOfficeComponent implements OnInit {
       this.indexPage;
       this.messages = result;
     });
+    this.titleMessages = "Messsages Favoris";
+    this.getUnreadedMessagesNumbers();
   }
 
   logOut(){
     localStorage.removeItem("adminIsLogin")
     window.location.href = APP_URL.SITE_URL + "lifiled-admin/login";
   }
+
+  readMessage(messageId: number){
+    let data = {
+      "status" : 1
+    }
+    if (this.adminService.readMessage(messageId, data)) {
+      // message lu
+      console.log("test read message passed");
+    this.getUnreadedMessagesNumbers();
+    } else {
+      // message  non lu
+      console.log("test read message failed");
+    }
+  }
+
+  addToWhishList(messageId: number){
+    let data = {
+      "whish" : 1
+    }
+    if (this.adminService.addToWhishList(messageId, data)) {
+      // message lu
+      console.log("test whish message passed");
+    } else {
+      // message  non lu
+      console.log("test whish message failed");
+    }
+  }
+
+   tableColor(status: number){
+     switch (status) {
+       case 0:
+         return "table-warning";
+         break;
+
+         case 1:
+          return "table-info";
+          break;
+     
+       default:
+        return "";
+         break;
+     }
+   }
 
 }

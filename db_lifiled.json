@@ -5,8 +5,8 @@
             "email": "typicode",
             "subject": "typicode",
             "message": "typicode",
-            "status": 0,
-            "whish": 0,
+            "status": 1,
+            "whish": 1,
             "date": ""
         },
         {
@@ -14,7 +14,7 @@
             "email": "Bahm42122@gmail.com",
             "subject": "sujet",
             "message": "ok",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "id": 2
         },
@@ -23,7 +23,7 @@
             "email": "karnauda1er@gmail.com",
             "subject": "sujet",
             "message": "d",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06",
             "id": 3
@@ -33,7 +33,7 @@
             "email": "karnauda1er@gmail.com",
             "subject": "sujet",
             "message": "good",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 14:58",
             "id": 4
@@ -43,7 +43,7 @@
             "email": "",
             "subject": "",
             "message": "",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 15:07",
             "id": 5
@@ -54,7 +54,7 @@
             "subject": null,
             "message": null,
             "status": 0,
-            "whish": 0,
+            "whish": 1,
             "date": "2022-10-06 15:07",
             "id": 6
         },
@@ -63,7 +63,7 @@
             "email": null,
             "subject": null,
             "message": null,
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 15:07",
             "id": 7
@@ -73,7 +73,7 @@
             "email": "",
             "subject": "",
             "message": "",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 15:09",
             "id": 8
@@ -83,7 +83,7 @@
             "email": "",
             "subject": "",
             "message": "",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 15:09",
             "id": 9
@@ -93,7 +93,7 @@
             "email": "",
             "subject": "",
             "message": "",
-            "status": 0,
+            "status": 1,
             "whish": 0,
             "date": "2022-10-06 15:14",
             "id": 10
@@ -104,17 +104,17 @@
             "subject": "",
             "message": "",
             "status": 0,
-            "whish": 0,
+            "whish": 1,
             "date": "2022-10-06 15:15",
             "id": 11
         }
     ],
     "admins": [{
         "id": 1,
-        "name": "some comment",
-        "username": "",
-        "password": "1",
-        "email": "typicode",
-        "date": ""
+        "name": "Admin",
+        "username": "super",
+        "password": "superADMIN",
+        "email": "administrateur@lifiled.africa",
+        "date": "2022-10-06 15:15"
     }]
 }
