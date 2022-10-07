@@ -26,7 +26,7 @@
     <div class="navigation w-100">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand" href="/accueil"><img src="assets/images/logo.png" style="max-width: 150px;" alt="logo LIFILED"></a>
+                <a class="navbar-brand" href="{{siteUrl}}accueil"><img src="assets/images/logo.png" style="max-width: 150px;" alt="logo LIFILED"></a>
                 <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,29 +34,29 @@
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item {{activeHomePage}}">
-                            <a class="nav-link" href="/accueil">Accueil</a>
+                            <a class="nav-link" href="{{siteUrl}}accueil">Accueil</a>
                         </li>
                         <li class="nav-item dropdown view {{activeActivityPage}}">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Nos Activités
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/activities/solaires">Eclairage Solaire</a></li>
-                                <li><a class="dropdown-item" href="/activities/public">Eclairage public</a></li>
-                                <li><a class="dropdown-item" href="/activities/connectivité">Connectivité</a></li>
+                                <li><a class="dropdown-item" href="{{siteUrl}}activities/solaires">Eclairage Solaire</a></li>
+                                <li><a class="dropdown-item" href="{{siteUrl}}activities/public">Eclairage public</a></li>
+                                <li><a class="dropdown-item" href="{{siteUrl}}activities/connectivité">Connectivité</a></li>
                             </ul>
                         </li>
                         <li class="nav-item {{activeServicePage}}">
-                            <a class="nav-link" href="/services">Nos Services</a>
+                            <a class="nav-link" href="{{siteUrl}}services">Nos Services</a>
                         </li>
                         <li class="nav-item {{activeRealisationPage}}">
-                            <a class="nav-link" href="/realisations">Nos Réalisations</a>
+                            <a class="nav-link" href="{{siteUrl}}realisations">Nos Réalisations</a>
                         </li>
                         <li class="nav-item {{activeAboutPage}}">
-                            <a class="nav-link" href="/a-propos">A Propos</a>
+                            <a class="nav-link" href="{{siteUrl}}a-propos">A Propos</a>
                         </li>
                         <li class="nav-item {{activeContactPage}}">
-                            <a class="nav-link" href="/contact">Nous contacter</a>
+                            <a class="nav-link" href="{{siteUrl}}contact">Nous contacter</a>
                         </li>
                     </ul>
                 </div>

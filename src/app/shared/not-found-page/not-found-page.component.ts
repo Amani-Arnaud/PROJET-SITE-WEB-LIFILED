@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { SITE_URL } from '../../shared/app-links';
 
 @Component({
   selector: 'app-not-found-page',
@@ -8,6 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class NotFoundPageComponent implements OnInit {
 
+  public siteUrl: string = SITE_URL;
   public bannerTitle: string = "Aucun Page ";
   public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Veuillez retouner à la page d'accueil";

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { SITE_URL } from '../../shared/app-links';
 
 @Component({
   selector: 'app-activity-public',
@@ -8,6 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ActivityPublicComponent implements OnInit {
 
+  public siteUrl: string = SITE_URL;
   public bannerTitle: string = "Eclairages Public";
   public bannerBg: string = "assets/images/bg/histoire-bg.jpg";
   public bannerText: string = "Decouvrez Nos activités d'éclairage public";

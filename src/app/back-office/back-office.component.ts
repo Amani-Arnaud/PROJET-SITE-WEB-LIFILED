@@ -3,6 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { AdminServiceService } from '../services/admin-service.service';
 import * as APP_URL from '../shared/app-links';
+import { SITE_URL } from '../shared/app-links';
+
 @Component({
   selector: 'app-back-office',
   templateUrl: './back-office.component.html',
@@ -10,6 +12,7 @@ import * as APP_URL from '../shared/app-links';
 })
 export class BackOfficeComponent implements OnInit {
 
+  public siteUrl: string = SITE_URL;
   public messages:any;
   public indexPage:number = 1;
   public titleMessages!: string;
@@ -29,7 +32,7 @@ export class BackOfficeComponent implements OnInit {
   ngOnInit(): void {
     this.pageTitle.setTitle("Back Office | LIFILED");
     if(!this.adminService.isAuth()){
-      this.router.navigateByUrl('/lifiled-admin/login');
+      this.router.navigateByUrl(this.siteUrl + 'lifiled-admin/login');
     }
     this.getAllMessages();
   }

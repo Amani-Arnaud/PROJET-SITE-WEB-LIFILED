@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import * as APP_URL from '../../../shared/app-links';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,6 +10,8 @@ import { filter } from 'rxjs/operators';
 })
 export class NavBarComponent implements OnInit {
 
+  public siteUrl: string = APP_URL.SITE_URL;
+  
   public activeHomePage:string =  "active";
   public activeActivityPage:string =  "";
   public activeServicePage:string =  "";
