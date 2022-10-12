@@ -3,6 +3,6 @@ Réalisation de site web de la startup LIFILED dans le cadre du STAGE INVERSER |
 
 ## Url du site
 - [Page d'accueil](https://amani-arnaud.github.io/PROJET-SITE-WEB-LIFILED)
-- [Page visualisation des Messages](https://amani-arnaud.github.io/PROJET-SITE-WEB-LIFILED/lifiled-admin)
+- [Page visualisation des Messages](https://amani-arnaud.github.io/PROJET-SITE-WEB-LIFILED/lifiled-admin/login)
 - - email: administrateur@lifiled.africa
 - - Mot de passe: superADMIN
