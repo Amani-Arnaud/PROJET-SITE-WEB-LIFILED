@@ -382,6 +382,10 @@ a h4:hover {
     background: #f8f8f8;
 }
 
+.bg-lifiled {
+    background: var(--lifiled-primary);
+}
+
 .text-primary {
     color: var(--lifiled-muted) !important;
 }
