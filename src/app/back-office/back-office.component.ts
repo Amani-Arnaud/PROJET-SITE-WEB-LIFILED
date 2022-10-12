@@ -32,7 +32,8 @@ export class BackOfficeComponent implements OnInit {
   ngOnInit(): void {
     this.pageTitle.setTitle("Back Office | LIFILED");
     if(!this.adminService.isAuth()){
-      this.router.navigateByUrl(this.siteUrl + 'lifiled-admin/login');
+      window.location.href = this.siteUrl + 'lifiled-admin/login';
+      // this.router.navigateByUrl(this.siteUrl + 'lifiled-admin/login');
     }
     this.getAllMessages();
   }

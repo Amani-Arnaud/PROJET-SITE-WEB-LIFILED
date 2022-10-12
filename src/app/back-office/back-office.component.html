@@ -88,7 +88,7 @@
                 <ng-container *ngFor="let message of messages | paginate: { itemsPerPage: 6, currentPage: indexPage }">
                     <tr class="{{tableColor(message.status)}}">
                         <th class="text-center align-middle" scope="row">#{{message.id}}</th>
-                        <td class="text-center align-middle">{{message.user}} - <a href="mailto:{{message.email}}" class="text-decoration-none">client@gmail.com</a></td>
+                        <td class="text-center align-middle">{{message.user}} - <a href="mailto:{{message.email}}" class="text-decoration-none">{{message.email}}</a></td>
                         <td class="text-center text-uppercase align-middle">{{message.subject}}</td>
                         <td class="text-center ">
                             <div class="accordion bg-transparent border-0 m-auto" style="width: 280px;">

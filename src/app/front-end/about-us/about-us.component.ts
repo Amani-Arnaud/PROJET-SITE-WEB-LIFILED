@@ -10,7 +10,7 @@ export class AboutUsComponent implements OnInit {
 
   public bannerTitle: string = "Apropos ";
   public bannerBg: string = "assets/images/show/Afrique_connecté.PNG";
-  public bannerText: string = "Decouvrez lifiled ces actions et son histoire";
+  public bannerText: string = "Decouvrez Lifiled ses actions et son histoire";
 
   constructor(
     private setTitle: Title,
