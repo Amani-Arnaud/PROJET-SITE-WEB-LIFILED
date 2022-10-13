@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class AboutUsComponent implements OnInit {
 
   public bannerTitle: string = "Apropos ";
-  public bannerBg: string = "assets/images/show/Afrique_connecté.PNG";
+  public bannerBg: string = "assets/images/show/afrique_connectée.jpg";
   public bannerText: string = "Decouvrez Lifiled ses actions et son histoire";
 
   constructor(
