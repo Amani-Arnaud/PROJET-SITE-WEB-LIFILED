@@ -10,3 +10,4 @@ Réalisation du site web et d'une stratégie marketing de la startup LIFILED dan
 - [Page visualisation des Messages](https://amani-arnaud.github.io/PROJET-SITE-WEB-LIFILED/lifiled-admin/login)
 - - email: administrateur@lifiled.africa
 - - Mot de passe: superADMIN
+- [Organisation Trello](https://trello.com/invite/b/0uRfBMz9/4dc96b2be9967a1d5842fb5cb5e75cfb/projet-site-web-lifiled-stage-inverse-t4su) 
