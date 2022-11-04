@@ -1,6 +1,7 @@
 # <p align="center"> PROJET SITE WEB LIFILED </p>
 ## <p align="center"> Equipe: Dougou Team (groupe 7) </p>
 ## <p align="center"> Document Marketing: Audit_et_Stratégie_Marketing_LIFILED.pdf (à la racine du projet)  </p> 
+## <p align="center"> Document repartition des tâche: STAGE-INVERSE-LIFILED-REPARTITION-GROUPE7.pdf (à la racine du projet)  </p> 
  
 
 Réalisation du site web et d'une stratégie marketing de la startup LIFILED dans le cadre du STAGE INVERSER | FORMATION T4SU SAYNA 2022
