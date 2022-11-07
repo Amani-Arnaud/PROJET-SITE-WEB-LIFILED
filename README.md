@@ -3,6 +3,7 @@
 ## <p align="center"> Document Marketing: Audit_et_Stratégie_Marketing_LIFILED.pdf (à la racine du projet)  </p> 
 ## <p align="center"> Document repartition des tâche: STAGE-INVERSE-LIFILED-REPARTITION-GROUPE7.pdf (à la racine du projet)  </p> 
 ## <p align="center"> Document presentation power point: PowerPoint de présentation.pdf (à la racine du projet)  </p> 
+## <p align="center"> Vidéo de soutenance [Dougou Team](https://drive.google.com/file/d/140_7sml_Szx9IR-v2N5RWx0S0Yb97ALU/view?usp=sharing) </p>
 
 Réalisation du site web et d'une stratégie marketing de la startup LIFILED dans le cadre du STAGE INVERSER | FORMATION T4SU SAYNA 2022
 
@@ -12,4 +13,3 @@ Réalisation du site web et d'une stratégie marketing de la startup LIFILED dan
 - - email: administrateur@lifiled.africa
 - - Mot de passe: superADMIN
 - [Organisation Trello](https://trello.com/invite/b/0uRfBMz9/4dc96b2be9967a1d5842fb5cb5e75cfb/projet-site-web-lifiled-stage-inverse-t4su) 
-- [Vidéo soutenance part 2](https://drive.google.com/file/d/1SZOUmmZtWEI4L7K5IFyGpfZdxQeEpSYD/view?usp=sharing)
